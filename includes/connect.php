@@ -5,7 +5,7 @@
 			. $mysqli->connect_error);
 	}
 	else{ /*other wise echo that the connection was made*/
-		echo "Connection made";
+		//echo "Connection made";
 	}
 	$mysqli->close();
 ?>

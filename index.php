@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Dom's To-Do List</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css"> <!-- link to css -->
+	<link rel="stylesheet" type="text/css" href="css/main.css"> <!-- link to class -->
 </head>
 <body>
 	<div class="wrap">
