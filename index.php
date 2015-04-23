@@ -10,6 +10,22 @@
 			<ul> <!-- unordered list -->
 				<?php 		
 					require("includes/connect.php"); /*include code from connect.php*/
+					$mysqli = new mysqli('localhost', 'root', 'root', 'todo'); /*make mysqli variable with this info into thetable todo*/
+					$query = "SELECT * FROM todo ORDER BY date ASC"; /*$query selects from the table todo and order by date in asdending order */
+					if ($result = $mysqli->query($query)) { /*if the result is equal to the queried info*/
+						$numrows = $result->num_rows: /*$numrows is the result of num_rows*/
+						if ($numrows>0) { /*if $numrows is greater than 0*/
+							while ($row = $result->fetch_assoc()) { 
+								$task_id = $row['id'];
+								$task_name = $row['task'];
+
+								echo "<li>
+								<span>'.$task_name'
+
+								";
+							}
+						}
+					}
 				?>
 			</ul>	
 		</div>

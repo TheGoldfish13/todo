@@ -1,9 +1,9 @@
 <?php 
 	$task_is = strip_tags($_POST['id']);
 	require('connect.php'); /*connect to database*/
-	$mysqli = new mysqli('localhost', 'root', 'root', 'tasks');  /*store all this info in $mysqli*/
+	$mysqli = new mysqli('localhost', 'root', 'root', 'todo');  /*store all this info in $mysqli*/
 
-	if($result = $mysqli->query("DELETE FROM tasks WHERE id='task_id'")) { /*if result = mysqli querey then..*/
+	if($result = $mysqli->query("DELETE FROM todo WHERE id='task_id'")) { /*if result = mysqli querey then..*/
 
 	}
  ?>
