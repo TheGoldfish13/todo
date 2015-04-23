@@ -12,17 +12,17 @@
 					require("includes/connect.php"); /*include code from connect.php*/
 					$mysqli = new mysqli('localhost', 'root', 'root', 'todo'); /*make mysqli variable with this info into thetable todo*/
 					$query = "SELECT * FROM todo ORDER BY date ASC"; /*$query selects from the table todo and order by date in asdending order */
-					if ($result = $mysqli->query($query)) { /*if the result is equal to the queried info*/
-						$numrows = $result->num_rows: /*$numrows is the result of num_rows*/
+					if ($result = $mysqli->query($query)) { /*if the result is equal to the queried info (from php)*/
+						$numrows = $result->num_rows: /*$numrows is the result of num_rows (from php)*/
 						if ($numrows>0) { /*if $numrows is greater than 0*/
-							while ($row = $result->fetch_assoc()) { 
+							while ($row = $result->fetch_assoc()) { /*while this is true*/
 								$task_id = $row['id'];
 								$task_name = $row['task'];
 
-								echo "<li>
-								<span>'.$task_name'
-
-								";
+								echo '<li>
+								<span>'.$task_name. '</span>
+								<img id="'.$task_id.'" class="delete button" width="10px" src="images/close.svg"/>
+								</li>';
 							}
 						}
 					}
