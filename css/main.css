@@ -1,8 +1,6 @@
 @import "reset.css"; /*import reset.css here*/
 @import "normalize.css";/*same wit normalize*/
 
-@import	url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
-
 body{ /*change color and  backgroundof body to this*/
 	color:#999;
 	background:#f1f1f1;
