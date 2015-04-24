@@ -6,9 +6,9 @@
 	include('connect.php'); /*connect to database*/
 	
 	$mysqli = new mysqli('localhost', 'root', 'root', 'todo'); /*store all this info in $mysqli*/
-	$mysqli->query("INSERT INTO todo VALUES ('', '$task', '$date', '$time')"); /*query this info and insert it into the tasks table*/
+	$mysqli->query("INSERT INTO tasks VALUES ('', '$task', '$date', '$time')"); /*query this info and insert it into the tasks table*/
 
-	$query = "SELECT * FROM todo WHERE task='$task' and date='$date' and time='$time'" /*actually query all the tasks*/
+	$query = "SELECT * FROM tasks WHERE task='$task' and date='$date' and time='$time'" /*actually query all the tasks*/
 
 	if($result = $mysqli->query($query)) { /*if the result = the mysli query*/
 		while ($row = $result->fetch_assoc()) { /*while row=result*/
