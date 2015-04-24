@@ -8,8 +8,7 @@
 	<div class="wrap">
 		<div class="task-list">
 			<ul> 
-				<?php 		
-					require("includes/connect.php"); /*include code from connect.php*/
+				<?php require("includes/connect.php"); /*include code from connect.php*/
 					$mysqli = new mysqli('localhost', 'root', 'root', 'todo'); /*make mysqli variable with this info into thetable todo*/
 					$query = "SELECT * FROM tasks ORDER BY date ASC, time ASC"; /*$query selects from the table todo and order by date in asdending order */
 					if ($result = $mysqli->query($query)) { /*if the result is equal to the queried info (from php)*/
@@ -34,8 +33,7 @@
 		</form>
 	</div>
 </body>
-<!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
-<script type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script>
 	add_task(); /*calling the add_task function*/
 
