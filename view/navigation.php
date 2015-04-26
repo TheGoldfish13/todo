@@ -5,7 +5,7 @@
     
 ?>
 <nav>
-    <ul>
+    <ul class="nav-thing">
         <!-- create a link that point to the post file -->
          <li><a href="<?php echo $path. "login.php" ?>">Log In</a></li>
          <li><a href="<?php echo $path. "register.php" ?>">Register</a></li>

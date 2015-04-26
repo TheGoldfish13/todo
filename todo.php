@@ -3,10 +3,11 @@
 <head>
 	<title> Dom's To-Do List </title>
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="wrap"> 
-		<div class="task-list">
+		<div class="task-list" id="task-box">
 			<ul>
 				<?php require("includes/connect.php"); /*include code from connect.php*/
 				$mysqli = new mysqli('localhost', 'root', 'root', 'todo'); /*make mysqli variable with this info into thetable todo*/
@@ -28,7 +29,7 @@
 			</ul>
 		</div>
 		<form class="add-new-task" autocomplete="off"> <!-- make a form with class add-neew-task with no autocomplete -->
-			<input type="text" name="new-task" placeholder="Add new item..."/> <!-- make a text input  -->
+			<input type="text" name="new-task" id="item-box" placeholder="Add new item..."/> <!-- make a text input  -->
 		</form>
 	</div>
 </body>

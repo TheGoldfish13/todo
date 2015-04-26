@@ -19,3 +19,42 @@ body{ /*change color and  backgroundof body to this*/
 	margin-top: 40px;
 	padding: 22px 6%;
 }
+
+@media screen and (max-width:375px) {
+	body{
+		text-align: center;
+		font-size:40px;
+	}
+	.nav-thing{
+		padding:13%;
+	}
+	a{
+		text-decoration: none;
+	}
+	#username-box{
+		width:85%;
+	}
+	#username-div{
+		margin-bottom: 10%;
+	}
+	#password-box{
+		width:85%;
+		margin-top: 2%;
+	}
+	h1{
+		font-size: 70px;
+	}
+	#login-button{
+		margin-top: 5%;
+	}
+	#task-box{
+		width: 70%;
+		margin-left: 5%;
+	}
+	#item-box{
+		width:75%;
+		margin-right: 7%;
+		margin-top: 5%;
+	}
+
+}
