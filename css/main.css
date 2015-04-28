@@ -2,8 +2,8 @@
 @import "normalize.css";/*same wit normalize*/
 
 body{ /*change color and  backgroundof body to this*/
-	color:#999;
-	background:#f1f1f1;
+	background-image: url("../images/testu.png");
+	text-align: center;
 }
 
 .wrap{ /*make stuff with the class wrap 400px wide and no margin*/
@@ -13,12 +13,54 @@ body{ /*change color and  backgroundof body to this*/
 
 .task-list{ /*other stylizing*/
 	width:88%;
-	min-height: 300px;
+	min-height: 420px;
 	background: #fff;
 	box-shadow: 2px 2px 0px #ddd;
 	margin-top: 40px;
 	padding: 22px 6%;
 }
+.nav-thing{
+	text-align: center;
+	font-size: 40px;
+	margin-top: 3%;
+}
+a{
+	text-decoration: none;
+	margin-bottom: 50px;
+}
+li{
+	margin-top: 5px;
+}
+#login-text{
+	font-size: 45px;
+}
+#username-text{
+	font-size: 25px;
+}
+#password-text{
+	font-size: 25px;
+	margin-left: 1px;
+}
+#password-box{
+	margin-left: 5px;
+}
+#item-box{
+	margin-top: 3%;
+	width: 53%;
+	margin-right: 10%;
+	text-align: center;
+	font-size: 22px;
+}
+#task-box{
+	text-align: left;
+	font-size: 20px;
+	padding-left: 8%;
+	box-sizing:border-box;
+}
+.delete-button{
+	margin-left: 2px;
+}
+
 
 @media screen and (max-width:375px) {
 	body{
@@ -50,6 +92,7 @@ body{ /*change color and  backgroundof body to this*/
 	#task-box{
 		width: 70%;
 		margin-left: 5%;
+		text-align: left;
 	}
 	#item-box{
 		width:75%;

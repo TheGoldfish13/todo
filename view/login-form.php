@@ -3,7 +3,7 @@
 
  ?>
 
- <h1>Login</h1>
+ <h1 id="login-text">Login</h1>
 
  <form method="post" action="<?php echo $path . "controller/login-user.php"; ?>" id="loginForm"> 	
       <div id="username-div">
