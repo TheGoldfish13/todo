@@ -28,6 +28,10 @@ body{ /*change color and  backgroundof body to this*/
 a{
 	text-decoration: none;
 	margin-bottom: 50px;
+	color: black;
+}
+a:hover{
+	font-size: 44px; 
 }
 li{
 	margin-top: 5px;
